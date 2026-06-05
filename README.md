@@ -12,3 +12,11 @@ Next-Gen Engine: 304,853 spins/sec  ██████████████�
   <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/legacy_3x3.png" width="45%" />
   <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/new_3x3.png" width="45%" />
 </p>
+
+
+*Clean execution of 1,000,000 iterations in an isolated environment. This represents the peak single-threaded throughput of the optimized hot path, completely free from I/O, logging, or framework allocation overhead.*
+<p >
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/Screenshot%20from%202026-06-05%2013-23-23.png" width="45%" />
+</p>
+
+
