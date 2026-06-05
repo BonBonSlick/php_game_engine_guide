@@ -41,3 +41,27 @@ This confirms that the mathematical slot core is no longer a bottleneck. The CPU
 </p>
 
 
+
+
+### 🐹 Go (Golang) Multi-Threaded Concurrency Peak Results
+To break past single-core limitations and eliminate dynamic runtime overhead, the math logic was ported to Go: [`test_your_might.go`](https://github.com/BonBonSlick/php_game_engine_guide/blob/main/test_your_might.go). By utilizing native OS-level concurrency (`sync.WaitGroup`), zero-allocation memory locality, and a hardware-optimized PCG generator, the isolated multi-threaded simulation scaled massively:
+* **Execution Time:** 0.8308 seconds (For 100,000,000 total spins)
+* **Calculated RTP:** 0.1545220
+* **Max Throughput:** **120,366,325 RPS** (Spins per second)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/go_time.png" width="90%" alt="Go Isolation Benchmark"/>
+</p>
+
+---
+
+### Performance Evolution Breakdown
+
+| Stage / Engine Level | Throughput (RPS) | Speedup vs Legacy | Multi-Threading | Notes / Runtime Environment |
+| :--- | :--- | :--- | :--- | :--- |
+| **Legacy Engine Baseline** | ~5,000 RPS | 1x (Baseline) | No (Single-Core) | Heavy OOP structures & Array functions |
+| **Optimized Core Architecture** | ~304,853 RPS | ~60x | No (Single-Core) | Monolith layout with JIT enabled |
+| **Isolated Hot Path (PHP)** | ~1,859,739 RPS | ~370x | No (Single-Core) | Pure isolated CLI context without boilerplate |
+| **Isolated Concurrent Hot Path (Go)**| **~120,366,325 RPS**| **~24,000x** | **Yes (All CPU Cores)** | **Zero-allocation stack bound execution** |
+
+This confirms that when slot engine math is stripped down to raw primitives, flattened data structures, and compiled with mechanical sympathy for CPU caching, the computation layer completely ceases to be a system bottleneck.
