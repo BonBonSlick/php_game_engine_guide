@@ -43,7 +43,7 @@ This confirms that the mathematical slot core is no longer a bottleneck. The CPU
 
 
 ### 🐹 Go (Golang) Multi-Threaded Concurrency Peak Results
-To break past single-core limitations and eliminate dynamic runtime overhead, the math logic was ported to Go: [`test_your_might.go`](https://github.com/BonBonSlick/php_game_engine_guide/blob/main/test_your_might.go). By utilizing native OS-level concurrency (`sync.WaitGroup`), zero-allocation memory locality, and a hardware-optimized PCG generator, the isolated multi-threaded simulation scaled massively:
+To break past single-core limitations and eliminate dynamic runtime overhead, the math logic used described basics and principles was ported to Go: [`test_your_might.go`](https://github.com/BonBonSlick/php_game_engine_guide/blob/main/test_your_might.go). By utilizing native OS-level concurrency (`sync.WaitGroup`), zero-allocation memory locality, and a hardware-optimized PCG generator, the isolated multi-threaded simulation scaled massively:
 * **Execution Time:** 0.8308 seconds (For 100,000,000 total spins)
 * **Calculated RTP:** 0.1545220
 * **Max Throughput:** **120,366,325 RPS** (Spins per second)
