@@ -36,8 +36,7 @@ The results under pure isolation exceeded all expectations, demonstrating what t
 This confirms that the mathematical slot core is no longer a bottleneck. The CPU-bound simulation layer hits its theoretical "speed-of-light" limits when flattened into 1D arrays and freed from memory allocation cycles.
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/Screenshot%20from%202026-06-05%2013-23-23.png" width="45%" />
-  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/18059000%2Brps.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/1859000%2Brps_php.png" width="100%" />
 </p>
 
 
@@ -50,7 +49,7 @@ To break past single-core limitations and eliminate dynamic runtime overhead, th
 * **Max Throughput:** **120,366,325 RPS** (Spins per second)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/go_time.png" width="90%" alt="Go Isolation Benchmark"/>
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/go_time.png" width="100%" alt="Go Isolation Benchmark"/>
 </p>
 
 ---
