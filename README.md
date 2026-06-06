@@ -68,6 +68,6 @@ This confirms that when slot engine math is stripped down to raw primitives, fla
 
 <p >
   <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/php_v.png" width="100%" />
-  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/opcache_jit_config.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/opcache_jit_cfg.png" width="100%" />
 </p>
 
