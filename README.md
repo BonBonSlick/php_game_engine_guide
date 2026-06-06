@@ -64,3 +64,10 @@ To break past single-core limitations and eliminate dynamic runtime overhead to 
 | **Isolated Concurrent Hot Path (Go)**| **~120,366,325 RPS**| **~24,000x** | **Yes (All CPU Cores)** | **Zero-allocation stack bound execution** |
 
 This confirms that when slot engine math is stripped down to raw primitives, flattened data structures, and compiled with mechanical sympathy for CPU caching, the computation layer completely ceases to be a system bottleneck.
+
+
+<p >
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/php_v.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/BonBonSlick/php_game_engine_guide/refs/heads/main/opcache_jit_config.png" width="100%" />
+</p>
+
